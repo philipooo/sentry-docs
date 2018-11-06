@@ -49,11 +49,13 @@ With the following content:
 
 ```json
 {
-    "allowedDomains": ["*"],
-    "trustedRelays": [],
-    "publicKeys": ["___PUBLIC_KEY___"],
+    "publicKeys": {
+        "___PUBLIC_KEY___": true
+    },
     "config": {
-        "piiConfig": {}
+        "piiConfig": {},
+        "allowedDomains": ["*"],
+        "trustedRelays": []
     }
 }
 ```
